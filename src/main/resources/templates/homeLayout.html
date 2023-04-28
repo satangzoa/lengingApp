@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" 
+		th:href="@{/css/home.css}"
+		href="../static/css/home.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!-- owl carousel -->
+	<link rel="stylesheet" th:href="@{/owlcarousel/assets/owl.carousel.min.css}">
+	<link rel="stylesheet" th:href="@{/owlcarousel/assets/owl.theme.default.min.css}">
+	<script th:src="@{/owlcarousel/owl.carousel.js}"></script>	
+</head>
+<body>
+	<!-- 헤더 -->
+	<nav class="navbar navbar-light navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">BookLending</a>
+			</div>
+			<form method="POST" th:action="@{/logout}">
+				<button class="btn btn-link pull-right navbar-brand"
+					type="submit"> 로그아웃 </button>
+			</form>
+		</div>
+	</nav>
+	
+	<!-- 컨텐츠 -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12 main">
+				<div th:include="__${contents}__">메인입니다</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+

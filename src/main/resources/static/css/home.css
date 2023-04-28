@@ -1,0 +1,14 @@
+.main {
+	padding-top: 50px;
+	padding-left: 20px;
+	position: fixed;
+	display: block;
+	top: 0;
+	bottom: 0;
+}
+
+#demos .owl-carousel .item {
+	height: 10rem;
+	background: #4DC7A0;
+	padding: 1rem;
+}
